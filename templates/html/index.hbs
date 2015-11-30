@@ -12,9 +12,13 @@
 <body>
     <h1>{{title}}</h1>
     <div class="navigation">
-        {{#each urls}}
-            <a href="{{this}}">{{this}}</a>
-        {{/each}}
+        {{#if urls}}
+            {{#each urls}}
+                <a href="{{this}}">{{this}}</a>
+            {{/each}}
+        {{else}}
+            <p>No templates rendered in this session.</p>
+        {{/if}}
     </div>
 </body>
 
