@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <style>
+    .navigation > a {
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>{{title}}</h1>
+    <div class="navigation">
+        {{#each urls}}
+            <a href="{{this}}">{{this}}</a>
+        {{/each}}
+    </div>
+</body>
+
+</html>
