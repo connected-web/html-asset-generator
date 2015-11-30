@@ -6,7 +6,7 @@ global.port = cli.p;
 global.templatesPath = cli.t;
 global.outputPath = cli.o;
 global.instructionsPath = cli.i;
-global.dataPath = process.cwd() + 'data';
+global.dataPath = 'data';
 global.activeCommand = cli._[0];
 
 console.log('Active command:', global.activeCommand);
