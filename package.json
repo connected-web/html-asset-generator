@@ -18,5 +18,13 @@
     "Webshot"
   ],
   "author": "John Beech",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "fs-extra": "^0.26.2",
+    "glob": "^6.0.1",
+    "handlebars": "^4.0.5",
+    "json-refs": "^1.3.0",
+    "webshot": "^0.16.0"
+  }
 }
