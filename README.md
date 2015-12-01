@@ -28,3 +28,18 @@ After putting in lots of effort to make the CLI friendly, this looks a bit silly
 1. Run `node node_modules/node-hag --help` to view up-to-date Help and Instructions
 1. Run `node node_modules/node-hag init` to create an example project in the current working directory
 1. Run `node node_modules/node-hag generate` to compiled the instructions and generate assets
+
+## Changelog
+
+### v1.0.2
+* Fixed Text renderer bug - non-passage of data
+
+### v1.0.1
+* First library release
+* Supports `generator init`
+* Supports `generator generate`
+* Supports `generator --help`
+* Supports image rendering based on HTML/CSS templates using `webshot`
+
+### v1.0.0 (Retracted)
+* Retracted, missing files in `npm` package
