@@ -1,5 +1,7 @@
-# Generator
+# Node HAG - The HTML Asset Generator
 The generator processes `instructions` to `render` `assets` based on `templates` combined with `data`.
+
+Supports rendering of HTML to Images using `webshot`, and creation of text based assets such as JSON, CSS, and HTML using Handlebar templates.
 
 ## Key terms
 - Instruction - a JSON block that specifies what to render
@@ -14,3 +16,15 @@ The generator processes `instructions` to `render` `assets` based on `templates`
 - `templates` - a folder of usable templates
 - `templates/template-name` - an individual template
 - `instructions` - a folder full of data to be rendered
+
+## Installation
+```npm install node-hag```
+
+## Commands
+
+After putting in lots of effort to make the CLI friendly, this looks a bit silly:
+* TODO: Make this available as a clean command line interface.
+
+1. Run `node node_modules/node-hag --help` to view up-to-date Help and Instructions
+1. Run `node node_modules/node-hag init` to create an example project in the current working directory
+1. Run `node node_modules/node-hag generate` to compiled the instructions and generate assets

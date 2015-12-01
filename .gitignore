@@ -1,5 +1,5 @@
 node_modules
-build
-data
-instructions
-templates
+/build
+/data
+/instructions
+/templates
