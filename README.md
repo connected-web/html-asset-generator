@@ -18,18 +18,23 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 - `instructions` - a folder full of data to be rendered
 
 ## Installation
-```npm install node-hag```
+```npm install node-hag -g```
 
-## Commands
+## Getting started
 
-After putting in lots of effort to make the CLI friendly, this looks a bit silly:
-* TODO: Make this available as a clean command line interface.
+1. Run `hag --help` to view up-to-date Help and Instructions
+1. Run `hag init` to create an example project in the current working directory
+1. Run `hag generate` to compiled the instructions and generate assets
 
-1. Run `node node_modules/node-hag --help` to view up-to-date Help and Instructions
-1. Run `node node_modules/node-hag init` to create an example project in the current working directory
-1. Run `node node_modules/node-hag generate` to compiled the instructions and generate assets
+If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
 ## Changelog
+
+### v1.0.4
+* Updated documentation
+
+### v1.0.3
+* Enabled global binary support on install, under the command alias `hag`
 
 ### v1.0.2
 * Fixed Text renderer bug - non-passage of data
