@@ -1,0 +1,23 @@
+[{
+    "asset": "example-image-asset.png",
+    "template": "/example-html-template.hbs",
+    "renderer": {
+        "type": "webshot",
+        "size": {
+            "width": 640,
+            "height": 960
+        }
+    },
+    "data": {
+        "$ref": "data/example-data.json"
+    }
+}, {
+    "asset": "example-text-asset.md",
+    "template": "/example-text-template.hbs",
+    "renderer": {
+        "type": "text"
+    },
+    "data": {
+        "$ref": "data/example-data.json"
+    }
+}]
