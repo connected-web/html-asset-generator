@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var cli = require('./lib/cli');
 var generate = require('./lib/commands/generate.js');
 var initialise = require('./lib/commands/initialise.js');
