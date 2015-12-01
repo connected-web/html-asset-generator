@@ -30,6 +30,9 @@ If that all worked as expected, take a closer look at the `instructions` folder,
 
 ## Changelog
 
+### v1.0.5
+* Attempting to fix install command for Mac
+
 ### v1.0.4
 * Updated documentation
 
