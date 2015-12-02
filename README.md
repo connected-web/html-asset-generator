@@ -30,6 +30,9 @@ If that all worked as expected, take a closer look at the `instructions` folder,
 
 ## Changelog
 
+### v1.0.7
+* Display help text for unrecognised command
+
 ### v1.0.6
 * Refactored `generator.js` so library can be used as an API
   * `const hag = require('node-hag');
