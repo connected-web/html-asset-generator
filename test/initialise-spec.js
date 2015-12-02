@@ -1,22 +1,20 @@
 const expect = require('chai').expect;
 const clean = require('../lib/path/clean');
 const read = require('../lib/path/read');
+const complete = require('./helpers/complete');
+const compare = require('./helpers/compare');
+const testOptions = require('./helpers/testOptions');
 const hag = require('../generator.js');
 
 describe('Initialisation', function() {
 
-    const testOptions = {
-        port: 22020,
-        templatesPath: 'temp/t',
-        outputPath: 'temp/b',
-        instructionsPath: 'temp/i',
-        dataPath: 'temp/d'
-    }
-
     beforeEach(function(done) {
-        clean('temp')
-            .then(done);
+        clean('temp').then(done);
     });
+
+    afterEach(function(done) {
+        clean('temp').then(done);
+    })
 
     it('should report the correct number of files created', function(done) {
         hag(testOptions).init()
@@ -61,22 +59,3 @@ describe('Initialisation', function() {
             .catch(done);
     });
 });
-
-function complete(done) {
-    return function() {
-        done();
-    }
-}
-
-function compare(path1, path2) {
-    return Promise.all([
-        read(path1).then(stringify),
-        read(path2).then(stringify)
-    ]).then(function(files) {
-        expect(files[0]).to.equal(files[1]);
-    });
-}
-
-function stringify(value) {
-    return value.toString();
-}
