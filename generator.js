@@ -1,26 +1,19 @@
-var cli = require('./lib/cli');
-var generate = require('./lib/commands/generate.js');
-var initialise = require('./lib/commands/initialise.js');
+var defaultOptions = require('./lib/defaultOptions');
+var generate = require('./lib/commands/generate');
+var initialise = require('./lib/commands/initialise');
 
-global.port = cli.p;
-global.templatesPath = cli.t;
-global.outputPath = cli.o;
-global.instructionsPath = cli.i;
-global.dataPath = 'data';
-global.activeCommand = cli._[0];
+function configure(options) {
 
-console.log('Active command:', global.activeCommand);
-var commands = {
-    generate: generate,
-    init: initialise,
-    initialise: initialise
-};
+    options = options || {};
 
-var command = commands[global.activeCommand];
-if (command) {
-    command();
-} else {
-    console.error('Unrecognised command', global.activeCommand);
-    console.log('Use --help to view instructions');
-    process.exit(1);
+    Object.keys(defaultOptions).forEach(function(key) {
+        global[key] = options[key] || defaultOptions[key];
+    });
+
+    return {
+        generate: generate,
+        init: initialise
+    }
 }
+
+module.exports = configure;
