@@ -12,7 +12,8 @@ function configure(options) {
 
     return {
         generate: generate,
-        init: initialise
+        init: initialise,
+        defaultOptions: defaultOptions
     }
 }
 
