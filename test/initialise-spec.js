@@ -6,7 +6,7 @@ const compare = require('./helpers/compare');
 const testOptions = require('./helpers/testOptions');
 const hag = require('../generator.js');
 
-describe('Initialisation', function() {
+describe('API.init', function() {
 
     beforeEach(function(done) {
         clean('temp').then(done);
