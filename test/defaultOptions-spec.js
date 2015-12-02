@@ -9,7 +9,7 @@ describe('API.defaultOptions', function() {
 
     describe(`should have expected keys`, function() {
         expectedKeys.forEach(function(key) {
-            it(`should have a value for ${key}`, function() {
+            it(`expecting API.defaultOptions.${key}`, function() {
                 expect(defaultOptions).to.have.property(key);
             });
         });
