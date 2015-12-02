@@ -30,6 +30,15 @@ If that all worked as expected, take a closer look at the `instructions` folder,
 
 ## Changelog
 
+### v1.0.6
+* Refactored `generator.js` so library can be used as an API
+  * `const hag = require('node-hag');
+  * `const options = hag.defaultOptions;`
+  * `hag.init(options)`
+  * `hag.generate(options)`
+* Added default options file
+* Implemented `denodeify` for promise conversion, in place of `pcall`
+
 ### v1.0.5
 * Attempting to fix install command for Mac
 
