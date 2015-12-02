@@ -20,6 +20,9 @@ describe('API.generate', function() {
         const api = hag(testOptions);
         api.init()
             .then(api.generate)
+            .then(function(message) {
+                expect(message).to.equal('Completed work OK: 2, instructions total\nReport available at http://localhost:22020');
+            })
             .then(function() {
                 return Promise.all([
                     compare('temp/b/example-text-asset.md', 'test/fixtures/expected-text-asset.md')
