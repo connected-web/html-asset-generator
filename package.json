@@ -18,11 +18,14 @@
     "Image",
     "Webshot"
   ],
-  "bin": {"hag": "bin/hag"},
+  "bin": {
+    "hag": "bin/hag"
+  },
   "preferGlobal": "true",
   "author": "John Beech",
   "license": "ISC",
   "dependencies": {
+    "denodeify": "^1.2.1",
     "express": "^4.13.3",
     "fs-extra": "^0.26.2",
     "glob": "^6.0.1",

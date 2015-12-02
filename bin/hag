@@ -3,8 +3,6 @@
 var cli = require('../lib/cli')
 var generator = require('../generator');
 
-console.log('Active command:', global.activeCommand);
-
 var options = {
     port: cli.p,
     templatesPath: cli.t,
@@ -13,6 +11,8 @@ var options = {
     dataPath: 'data',
     activeCommand: cli._[0]
 }
+
+console.log('Active command:', global.activeCommand);
 
 var command = generator(options)[options.activeCommand];
 if (command) {
