@@ -30,6 +30,11 @@ If that all worked as expected, take a closer look at the `instructions` folder,
 
 ## Changelog
 
+### v1.0.8
+* Added formal tests
+* Fixed work count on completion
+* Changed internal API logging to call `options.serverLog`, allowing for override
+
 ### v1.0.7
 * Display help text for unrecognised command
 
