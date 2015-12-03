@@ -30,11 +30,12 @@ If that all worked as expected, take a closer look at the `instructions` folder,
 
 ## Changelog
 
-### Unreleased Changes
+### v1.0.9
 * Added tests for `API.defaultOptions`
 * Renamed tests to `API.generate` and `API.init` to provide documentation
+* Fix line ending in `bin/hag` to fix `env: node\r: No such file or directory` issue on UNIX systems
 
-### v1.0.8
+### v1.0.8 (Retracted)
 * Added formal tests
 * Fixed work count on completion
 * Changed internal API logging to call `options.serverLog`, allowing for override
