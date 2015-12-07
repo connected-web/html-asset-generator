@@ -9,7 +9,7 @@
         }
     },
     "data": {
-        "$ref": "data/example-data.json"
+        "$ref": "/data/example-data.json"
     }
 }, {
     "asset": "example-text-asset.md",
@@ -18,6 +18,6 @@
         "type": "text"
     },
     "data": {
-        "$ref": "data/example-data.json"
+        "$ref": "/data/example-data.json"
     }
 }]
