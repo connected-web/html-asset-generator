@@ -21,7 +21,7 @@ describe('API.generate', function() {
         api.init()
             .then(api.generate)
             .then(function(message) {
-                expect(message).to.equal('Completed work OK: 2, instructions total\nReport available at http://localhost:22020');
+                expect(message).to.equal('Completed work OK: 2, instructions total');
             })
             .then(function() {
                 return Promise.all([
