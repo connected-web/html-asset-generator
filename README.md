@@ -18,58 +18,61 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 - `instructions` - a folder full of data to be rendered
 
 ## Installation
-```npm install node-hag -g```
+`npm install node-hag -g`
 
 ## Getting started
-
 1. Run `hag --help` to view up-to-date Help and Instructions
-1. Run `hag init` to create an example project in the current working directory
-1. Run `hag generate` to compiled the instructions and generate assets
+2. Run `hag init` to create an example project in the current working directory
+3. Run `hag generate` to compiled the instructions and generate assets
 
 If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
 ## Changelog
+### v1.1.0
+- Made the clean step on generate an option: `-c` or `--clean`
+- Made tests more reliable
 
 ### v1.0.9
-* Added tests for `API.defaultOptions`
-* Renamed tests to `API.generate` and `API.init` to provide documentation
-* Fix line ending in `bin/hag` to fix `env: node\r: No such file or directory` issue on UNIX systems
+- Added tests for `API.defaultOptions`
+- Renamed tests to `API.generate` and `API.init` to provide documentation
+- Fix line ending in `bin/hag` to fix `env: node\r: No such file or directory` issue on UNIX systems
 
 ### v1.0.8 (Retracted)
-* Added formal tests
-* Fixed work count on completion
-* Changed internal API logging to call `options.serverLog`, allowing for override
+- Added formal tests
+- Fixed work count on completion
+- Changed internal API logging to call `options.serverLog`, allowing for override
 
 ### v1.0.7
-* Display help text for unrecognised command
+- Display help text for unrecognised command
 
 ### v1.0.6
-* Refactored `generator.js` so library can be used as an API
-  * `const hag = require('node-hag');
-  * `const options = hag.defaultOptions;`
-  * `hag.init(options)`
-  * `hag.generate(options)`
-* Added default options file
-* Implemented `denodeify` for promise conversion, in place of `pcall`
+- Refactored `generator.js` so library can be used as an API
+  - `const hag = require('node-hag');
+  - `const options = hag.defaultOptions;`
+  - `hag.init(options)`
+  - `hag.generate(options)`
+
+- Added default options file
+- Implemented `denodeify` for promise conversion, in place of `pcall`
 
 ### v1.0.5
-* Attempting to fix install command for Mac
+- Attempting to fix install command for Mac
 
 ### v1.0.4
-* Updated documentation
+- Updated documentation
 
 ### v1.0.3
-* Enabled global binary support on install, under the command alias `hag`
+- Enabled global binary support on install, under the command alias `hag`
 
 ### v1.0.2
-* Fixed Text renderer bug - non-passage of data
+- Fixed Text renderer bug - non-passage of data
 
 ### v1.0.1
-* First library release
-* Supports `generator init`
-* Supports `generator generate`
-* Supports `generator --help`
-* Supports image rendering based on HTML/CSS templates using `webshot`
+- First library release
+- Supports `generator init`
+- Supports `generator generate`
+- Supports `generator --help`
+- Supports image rendering based on HTML/CSS templates using `webshot`
 
 ### v1.0.0 (Retracted)
-* Retracted, missing files in `npm` package
+- Retracted, missing files in `npm` package
