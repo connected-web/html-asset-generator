@@ -28,12 +28,13 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
 ## Changelog
-### Unreleased changes
+### v1.1.1
 - Added static hosting for `/data`, `/instructions`, `/templates`, and `/output` when server runs
   - These are virtual paths based on local paths
   - Can be used to access local files from templates
 
 - `/data/` in `{"$ref": "/data/path.json"}` will be mapped to the locally hosted data files
+- Added tests for `API.host`
 
 ### v1.1.0
 - Made the clean step on generate an option: `-c` or `--clean`

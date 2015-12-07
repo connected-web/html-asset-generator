@@ -1,6 +1,6 @@
 {
   "name": "node-hag",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Node HTML Asset Generator (HAG) - converts HTML and CSS templates into rendered Image assets, and can also produce Text and JSON assets.",
   "main": "generator.js",
   "scripts": {
