@@ -41,7 +41,7 @@ describe('API.init', function() {
         hag(testOptions).init()
             .then(function() {
                 return Promise.all([
-                    compare('temp/d/example-data.json', 'fixtures/init/sample-data.json')
+                    compare('data/example-data.json', 'fixtures/init/sample-data.json')
                 ]);
             })
             .then(complete(done))

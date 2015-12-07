@@ -3,7 +3,7 @@ const testOptions = {
     templatesPath: 'temp/t',
     outputPath: 'temp/b',
     instructionsPath: 'temp/i',
-    dataPath: 'temp/d',
+    dataPath: 'data',
     serverLog: function(message) { /* ignore message */ }
 }
 
