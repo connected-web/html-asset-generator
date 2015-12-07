@@ -9,6 +9,7 @@ var options = {
     templatesPath: argv.t,
     outputPath: argv.o,
     instructionsPath: argv.i,
+    clean: argv.c,
     dataPath: 'data',
     activeCommand: argv._[0]
 }
