@@ -1,9 +1,9 @@
 const expect = require('chai').expect;
-const clean = require('../lib/path/clean');
+const clean = require('promise-path').clean;
 const complete = require('./helpers/complete');
-const read = require('../lib/path/read');
-const write = require('../lib/path/write');
-const fetch = require('../lib/path/fetch');
+const read = require('promise-path').read;
+const write = require('promise-path').write;
+const fetch = require('promise-path').fetch;
 const testOptions = require('./helpers/testOptions');
 const hag = require('../generator.js');
 
@@ -29,7 +29,7 @@ describe('API.host', function() {
                 ]);
             })
             .then(function(files) {
-                expect(JSON.parse(files[0].body)).to.deep.equal(JSON.parse(files[1].toString()));
+                expect(JSON.parse(files[0])).to.deep.equal(JSON.parse(files[1].toString()));
             })
             .then(complete(done))
             .catch(done);
@@ -47,7 +47,7 @@ describe('API.host', function() {
                 ]);
             })
             .then(function(files) {
-                expect(JSON.parse(files[0].body)).to.deep.equal(JSON.parse(files[1].toString()));
+                expect(JSON.parse(files[0])).to.deep.equal(JSON.parse(files[1].toString()));
             })
             .then(complete(done))
             .catch(done);
@@ -65,7 +65,7 @@ describe('API.host', function() {
                 ]);
             })
             .then(function(files) {
-                expect(files[0].body).to.deep.equal(files[1].toString());
+                expect(files[0]).to.deep.equal(files[1].toString());
             })
             .then(complete(done))
             .catch(done);
@@ -89,7 +89,7 @@ describe('API.host', function() {
                 ]);
             })
             .then(function(files) {
-                expect(files[0].body).to.deep.equal(files[1].toString());
+                expect(files[0]).to.deep.equal(files[1].toString());
             })
             .then(complete(done))
             .catch(done);

@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const clean = require('../lib/path/clean');
+const clean = require('promise-path').clean;
 const stringify = require('./helpers/stringify');
 const complete = require('./helpers/complete');
 const compare = require('./helpers/compare');

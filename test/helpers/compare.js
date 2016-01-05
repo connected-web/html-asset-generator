@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const read = require('../../lib/path/read');
+const read = require('promise-path').read;
 const stringify = require('./stringify');
 
 function compare(actualPath, expectedPath) {
