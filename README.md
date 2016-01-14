@@ -28,6 +28,9 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
 ## Changelog
+### v1.1.3
+- Changed sequencing order so that instruction files are processed sequentially
+
 ### v1.1.2
 - Removed `lib/path` methods, replaced with `promise-path` library
 
