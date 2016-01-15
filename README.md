@@ -28,6 +28,10 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
 ## Changelog
+### v1.1.6
+- Fix issue with non-referenced data defaulting to duplicate `default` key
+- Used `sha1` to generate a hash of the data to prevent duplicate renders
+
 ### v1.1.5
 - Fix issue with completed instruction count after sequencing changes
 
