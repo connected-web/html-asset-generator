@@ -1,42 +1,43 @@
 {
-  "name": "node-hag",
-  "version": "1.1.4",
-  "description": "Node HTML Asset Generator (HAG) - converts HTML and CSS templates into rendered Image assets, and can also produce Text and JSON assets.",
-  "main": "generator.js",
-  "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --recursive --no-timeouts"
-  },
-  "repository": "git@github.com:connected-web/node-hag",
-  "keywords": [
-    "Node",
-    "JS",
-    "HTML",
-    "CSS",
-    "Template",
-    "Generator",
-    "Asset",
-    "Image",
-    "Webshot"
-  ],
-  "bin": {
-    "hag": "bin/hag"
-  },
-  "preferGlobal": "true",
-  "author": "John Beech",
-  "license": "ISC",
-  "dependencies": {
-    "denodeify": "^1.2.1",
-    "express": "^4.13.3",
-    "express-favicon": "^1.0.1",
-    "handlebars": "^4.0.5",
-    "json-refs": "^1.3.0",
-    "promise-path": "^1.0.0",
-    "request": "^2.67.0",
-    "webshot": "^0.16.0",
-    "yargs": "^3.30.0"
-  },
-  "devDependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4"
-  }
+    "name": "node-hag",
+    "version": "1.1.5",
+    "description": "Node HTML Asset Generator (HAG) - converts HTML and CSS templates into rendered Image assets, and can also produce Text and JSON assets.",
+    "main": "generator.js",
+    "scripts": {
+        "test": "node node_modules/mocha/bin/mocha --recursive --no-timeouts"
+    },
+    "repository": "git@github.com:connected-web/node-hag",
+    "keywords": [
+        "Node",
+        "JS",
+        "HTML",
+        "CSS",
+        "Template",
+        "Generator",
+        "Asset",
+        "Image",
+        "Webshot"
+    ],
+    "bin": {
+        "hag": "bin/hag"
+    },
+    "preferGlobal": "true",
+    "author": "John Beech",
+    "license": "ISC",
+    "dependencies": {
+        "denodeify": "^1.2.1",
+        "express": "^4.13.3",
+        "express-favicon": "^1.0.1",
+        "handlebars": "^4.0.5",
+        "json-refs": "^1.3.0",
+        "promise-path": "^1.0.0",
+        "request": "^2.67.0",
+        "webshot": "^0.16.0",
+        "yargs": "^3.30.0"
+    },
+    "devDependencies": {
+        "chai": "^3.4.1",
+        "mocha": "^2.3.4"
+    },
+    "engine": "node >= 4.0.0"
 }
