@@ -3,6 +3,8 @@ The generator processes `instructions` to `render` `assets` based on `templates`
 
 Supports rendering of HTML to Images using `webshot`, and creation of text based assets such as JSON, CSS, and HTML using Handlebar templates.
 
+[![Dependency Status](https://david-dm.org/connected-web/node-hag.svg)](https://david-dm.org/connected-web/node-hag)
+
 ## Key terms
 - Instruction - a JSON block that specifies what to render
 - Asset - a useful item to be generated, such as an image, HTML, text, or JSON file
