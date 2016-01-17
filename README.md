@@ -30,6 +30,10 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
 ## Changelog
+### v1.1.8
+- Added glob matcher to command line to limit which instructions are processed
+- Added example commands to command line help
+
 ### v1.1.7
 - Updated outdated packages to latest versions
 
