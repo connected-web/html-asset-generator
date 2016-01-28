@@ -1,8 +1,8 @@
 {
-    "title": "Example Title",
-    "theme": {
-        "backgroundColor": "#E84",
-        "fontColor": "#222"
-    },
-    "author": "Connected Web"
+  "title": "Example Title",
+  "theme": {
+    "backgroundColor": "#E84",
+    "fontColor": "#222"
+  },
+  "author": "Connected Web"
 }
