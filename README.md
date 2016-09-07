@@ -30,6 +30,9 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
 ## Changelog
+### v1.2.1
+- Update package depdendencies to latest versions
+
 ### v1.2.0
 - Added `json` renderer type that skips template and renders directly to file
 - Added `{{json data}}` handlebars helper to render JSON out in other templates
