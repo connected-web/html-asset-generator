@@ -1,6 +1,9 @@
 ## Changelog
+### v1.3.0
+- Updated webshot, yargs, and favicon to latest versions
+
 ### v1.2.1
-- Update package depdendencies to latest versions
+- Update package dependencies to latest versions
 
 ### v1.2.0
 - Added `json` renderer type that skips template and renders directly to file
