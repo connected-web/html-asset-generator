@@ -6,7 +6,7 @@ HAG supports three types of output; text, JSON, and image (PNG).
 
 HAG can generate any type of text template (assumes utf-8).
 
-```
+```json
 {
   "asset": "example-text-asset.md",
   "template": "/example-text-template.hbs",
@@ -23,7 +23,7 @@ HAG can generate any type of text template (assumes utf-8).
 
 HAG makes a special case for JSON data so that it can be formatted nicely. Note: no template is required for the JSON renderer.
 
-```
+```json
 {
   "asset": "example-json-asset.json",
   "renderer": {
@@ -43,7 +43,7 @@ HAG makes a special case for JSON data so that it can be formatted nicely. Note:
 HAG is primarily aimed at generating using images from HTML/CSS templates. It uses the `webshot` API which in turn runs on top of `phantom`.
 
 Example using webshot render
-```
+```json
 {
   "asset": "example-image-asset.png",
   "template": "/example-html-template.hbs",
