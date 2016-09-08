@@ -29,6 +29,13 @@ Supports rendering of HTML to Images using `webshot`, and creation of text based
 
 If that all worked as expected, take a closer look at the `instructions` folder, and the resulting `build` folder to see the generated assets.
 
+## Guides
+- [Command line arguments](docs/command-line-args.md)
+- [Instructions, data, and templates](docs/instructions-data-templates.md)
+- [Output formats; text, json, image](docs/output-formats.md)
+- [Samples and use cases](docs/samples-and-use-cases.md)
+
+
 ## Changelog
 
 See: [CHANGELOG.md](CHANGELOG.md)
