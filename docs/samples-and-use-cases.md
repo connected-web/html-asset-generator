@@ -7,7 +7,7 @@ If you want to use a background image as part of a template; you can either host
 In this example, we have an instruction to render a card image, using a background image saved in the `/data/images` folder
 
 The instruction `instructions/render-cards.json`:
-```
+```json
 [{
     "asset": "images/cards/contact/false-contact.png",
     "template": "/cards/event-contact.html",
@@ -25,7 +25,7 @@ The instruction `instructions/render-cards.json`:
 ```
 
 The data `false-contact.json`:
-```
+```json
 {
   "title": "False Contact",
   "instructions": ["As you approach the location of the blip, your scanner stops making noise.", "Must have been a false positive."],
@@ -40,7 +40,7 @@ The data `false-contact.json`:
 ```
 
 The template `event-contact.html`:
-```
+```html
 <html>
 
 <head>
