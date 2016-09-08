@@ -27,13 +27,13 @@
   "dependencies": {
     "denodeify": "^1.2.1",
     "express": "^4.14.0",
-    "express-favicon": "^1.0.1",
+    "express-favicon": "^2.0.0",
     "handlebars": "^4.0.5",
     "json-refs": "^2.1.6",
     "promise-path": "^1.2.3",
     "request": "^2.74.0",
-    "webshot": "^0.17.0",
-    "yargs": "^3.32.0"
+    "webshot": "^0.18.0",
+    "yargs": "^5.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -15,7 +15,6 @@ var options = {
     activeCommand: argv._[0]
 }
 
-
 var command = generator(options)[options.activeCommand];
 console.log('Active command:', global.activeCommand);
 
@@ -24,6 +23,6 @@ if (command) {
 } else {
     console.error('Unrecognised command', global.activeCommand);
     console.error();
-    console.error(cli.help());
+    console.error(cli.getUsageInstance().help());
     process.exit(1);
 }
