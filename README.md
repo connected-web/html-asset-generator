@@ -1,4 +1,4 @@
-# Node HAG - The HTML Asset Generator
+# HTML Asset Generator (HAG)
 The generator processes `instructions` to `render` `assets` based on `templates` combined with `data`.
 
 Supports rendering of HTML to Images using `webshot`, and creation of text based assets such as JSON, CSS, and HTML using Handlebar templates.
