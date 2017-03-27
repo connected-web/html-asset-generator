@@ -1,4 +1,7 @@
 ## Changelog
+### v1.3.1
+- Support JSON `$ref` fields in data when rendering instructions
+
 ### v1.3.0
 - Updated webshot, yargs, and favicon to latest versions
 

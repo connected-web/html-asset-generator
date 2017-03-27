@@ -4,14 +4,14 @@ You can check these at any time by running `hag` or `hag help`.
 
 Default:
 ```
-HTML Asset Generator 1.3.0 (HAG)
+HTML Asset Generator 1.3.1 (HAG)
 Usage: node generator <command> <args>
 
 Commands:
   generate [fileglob]  Generate assets based on instructions
   host                 Host the asset server without processing instructions
   init                 Create initial folders, templates, and instructions
-  version              Reports the current version (1.3.0)
+  version              Reports the current version (1.3.1)
 
 Options:
   -p, --port              Port number for local template server [default: 12020]
@@ -84,5 +84,5 @@ Version reports the current version; that's all. Unlike the other commands, it d
 
 Sample output:
 ```
-1.3.0
+1.3.1
 ```
