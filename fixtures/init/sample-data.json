@@ -4,5 +4,8 @@
     "backgroundColor": "#E84",
     "fontColor": "#222"
   },
-  "author": "Connected Web"
+  "author": "Connected Web",
+  "referenced-data": {
+    "$ref": "example-number-list.json"
+  }
 }

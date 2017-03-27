@@ -13,6 +13,16 @@
     "backgroundColor": "#E84",
     "fontColor": "#222"
   },
-  "author": "Connected Web"
+  "author": "Connected Web",
+  "referenced-data": {
+    "number-list": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "date": "27th March 2017",
+    "time": "15:42"
+  }
 }
 ```

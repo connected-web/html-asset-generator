@@ -19,7 +19,7 @@ describe('API.init', function() {
     it('should report the correct number of files created', function(done) {
         hag(testOptions).init()
             .then(function(result) {
-                expect(result).to.deep.equal('Successfully created 4 resources');
+                expect(result).to.deep.equal('Successfully created 5 resources');
             })
             .then(complete(done))
             .catch(done);
@@ -41,7 +41,8 @@ describe('API.init', function() {
         hag(testOptions).init()
             .then(function() {
                 return Promise.all([
-                    compare('temp/d/example-data.json', 'fixtures/init/sample-data.json')
+                    compare('temp/d/example-data.json', 'fixtures/init/sample-data.json'),
+                    compare('temp/d/example-number-list.json', 'fixtures/init/sample-number-list.json')
                 ]);
             })
             .then(complete(done))

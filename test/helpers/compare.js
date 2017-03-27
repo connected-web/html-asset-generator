@@ -7,7 +7,7 @@ function compare(actualPath, expectedPath) {
         read(actualPath).then(stringify),
         read(expectedPath).then(stringify)
     ]).then(function(files) {
-        expect(files[1]).to.equal(files[0]);
+        expect(files[0].trim()).to.equal(files[1].trim());
     });
 }
 
