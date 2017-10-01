@@ -4,7 +4,8 @@
   "description": "Node HTML Asset Generator (HAG) - converts HTML and CSS templates into rendered Image assets, and can also produce Text and JSON assets.",
   "main": "generator.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --recursive --no-timeouts --reporter=nyan"
+    "lint": "standard --fix",
+    "test": "node node_modules/mocha/bin/mocha --recursive --no-timeouts --reporter=nyan && npm run lint"
   },
   "repository": "git@github.com:connected-web/node-hag",
   "keywords": [
@@ -37,7 +38,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "standard": "^10.0.3"
   },
   "engine": "node >= 4.0.0"
 }
