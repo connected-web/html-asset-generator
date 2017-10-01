@@ -1,7 +1,7 @@
-function complete(done) {
-    return function() {
-        done();
-    }
+function complete (done) {
+  return function () {
+    done()
+  }
 }
 
-module.exports = complete;
+module.exports = complete
