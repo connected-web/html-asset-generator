@@ -1,4 +1,11 @@
 ## Changelog
+
+### v1.4.0
+- Changed internal key caching to ignore `.name` and `.title` fields
+- Implemented standard js linting across project
+- Removed dead code
+- Used `path.join` where appropriate
+
 ### v1.3.1
 - Support JSON `$ref` fields in data when rendering instructions
 
