@@ -35,6 +35,10 @@ If that all worked as expected, take a closer look at the `instructions` folder,
 - [Output formats; text, json, image](docs/output-formats.md)
 - [Samples and use cases](docs/samples-and-use-cases.md)
 
+## Development
+
+- Checkout the project, run `npm install`
+- Run `npm test`
 
 ## Changelog
 
