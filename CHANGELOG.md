@@ -1,5 +1,8 @@
 ## Changelog
 
+### v1.4.1
+- Neaten up error message when unable to find file during webshot render
+
 ### v1.4.0
 - Changed internal key caching to ignore `.name` and `.title` fields
 - Implemented standard js linting across project
