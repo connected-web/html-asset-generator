@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.6.0
+- Upgrade packages: `express`, `handlebars`, `json-refs`, `promise-path`, `request`, `yargs`, `chai`, and `mocha` to use latest versions
+
+### v1.5.0
+- Fix use of Promise.resolve to work with newer versions of node, tested with 8.9.4
+
 ### v1.4.1
 - Neaten up error message when unable to find file during webshot render
 
