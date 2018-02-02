@@ -20,7 +20,7 @@ describe('API.generate', function () {
     api.init().then(api.generate).then(function (message) {
       expect(message).to.equal('Completed work OK: 3, instructions total')
     }).then(function () {
-      console.log('Completed work or something')
+      console.log('Completed work... returning data')
       return Promise.all([
         compare('temp/b/example-text-asset.md', 'test/fixtures/expected-text-asset.md'),
         compare('temp/b/example-json-asset.json', 'test/fixtures/expected-json-asset.json')
