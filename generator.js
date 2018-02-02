@@ -1,6 +1,6 @@
 var defaultOptions = require('./lib/defaultOptions')
 var generate = require('./lib/commands/generate')
-var initialise = require('./lib/commands/initialise')
+var init = require('./lib/commands/initialise')
 var host = require('./lib/server/host')
 
 function configure (options) {
@@ -11,10 +11,10 @@ function configure (options) {
   })
 
   return {
-    generate: generate,
-    init: initialise,
-    host: host,
-    defaultOptions: defaultOptions
+    generate,
+    init,
+    host,
+    defaultOptions
   }
 }
 
