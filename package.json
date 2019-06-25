@@ -29,10 +29,10 @@
     "denodeify": "^1.2.1",
     "express": "^4.16.2",
     "express-favicon": "^2.0.0",
-    "handlebars": "^4.0.11",
-    "json-refs": "^3.0.3",
+    "handlebars": "^4.1.2",
+    "json-refs": "^3.0.13",
     "promise-path": "^1.2.6",
-    "request": "^2.83.0",
+    "request": "^2.88.0",
     "webshot": "^0.18.0",
     "yargs": "^11.0.0"
   },
