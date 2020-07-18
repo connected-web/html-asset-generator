@@ -27,19 +27,19 @@
   "license": "ISC",
   "dependencies": {
     "denodeify": "^1.2.1",
-    "express": "^4.16.2",
-    "express-favicon": "^2.0.0",
-    "handlebars": "^4.1.2",
-    "json-refs": "^3.0.13",
-    "promise-path": "^1.2.6",
-    "request": "^2.88.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "handlebars": "^4.7.6",
+    "json-refs": "^3.0.15",
+    "promise-path": "^1.4.0",
+    "request": "^2.88.2",
     "webshot": "^0.18.0",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "mocha": "^8.0.1",
-    "standard": "^10.0.3"
+    "standard": "^14.3.4"
   },
   "engine": "node >= 4.0.0"
 }
