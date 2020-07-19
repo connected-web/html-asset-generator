@@ -22,7 +22,7 @@ describe('API.host', function () {
     testOptions.port = testOptions.port + 1
     const api = hag(testOptions)
     let serverHost
-    api.init().then(api.host).then(({server, serverUrl}) => {
+    api.init().then(api.host).then(({ server, serverUrl }) => {
       serverHost = server
       return Promise.all([
         fetch(serverUrl + '/instructions/example-instructions.json'),
@@ -37,7 +37,7 @@ describe('API.host', function () {
     testOptions.port = testOptions.port + 1
     const api = hag(testOptions)
     let serverHost
-    api.init().then(api.host).then(({server, serverUrl}) => {
+    api.init().then(api.host).then(({ server, serverUrl }) => {
       serverHost = server
       return Promise.all([
         fetch(serverUrl + '/data/example-data.json'),
@@ -52,7 +52,7 @@ describe('API.host', function () {
     testOptions.port = testOptions.port + 1
     const api = hag(testOptions)
     let serverHost
-    api.init().then(api.host).then(({server, serverUrl}) => {
+    api.init().then(api.host).then(({ server, serverUrl }) => {
       serverHost = server
       return Promise.all([
         fetch(serverUrl + '/templates/example-text-template.hbs'),
@@ -71,7 +71,7 @@ describe('API.host', function () {
       return read(path.join(__dirname, 'fixtures/expected-text-asset.md')).then(function (body) {
         return write(path.join(global.outputPath, 'example-text-asset.md'), body)
       })
-    }).then(api.host).then(({server, serverUrl}) => {
+    }).then(api.host).then(({ server, serverUrl }) => {
       serverHost = server
       return Promise.all([
         fetch(serverUrl + '/output/example-text-asset.md'),

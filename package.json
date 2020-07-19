@@ -31,15 +31,15 @@
     "express-favicon": "^2.0.0",
     "handlebars": "^4.1.2",
     "json-refs": "^3.0.13",
+    "node-webshot": "^1.0.4",
     "promise-path": "^1.2.6",
     "request": "^2.88.0",
-    "webshot": "^0.18.0",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^8.0.1",
-    "standard": "^10.0.3"
+    "standard": "^14.3.4"
   },
   "engine": "node >= 4.0.0"
 }
