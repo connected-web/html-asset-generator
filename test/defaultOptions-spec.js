@@ -15,7 +15,7 @@ describe('API.defaultOptions', function () {
     'serverLog'
   ]
 
-  describe(`should have expected keys`, function () {
+  describe('should have expected keys', function () {
     expectedKeys.forEach(function (key) {
       it(`expecting API.defaultOptions.${key}`, function () {
         expect(defaultOptions).to.have.property(key)

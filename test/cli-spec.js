@@ -8,7 +8,7 @@ const testOptions = require('./helpers/testOptions')
 
 describe('Command Line Interface', function () {
   var initCommand = [
-    `node ./bin/hag init`,
+    'node ./bin/hag init',
     `-i ${testOptions.instructionsPath}`,
     `-t ${testOptions.templatesPath}`,
     `-o ${testOptions.outputPath}`,
@@ -16,7 +16,7 @@ describe('Command Line Interface', function () {
   ].join(' ')
 
   var generateString = [
-    `node ./bin/hag generate`,
+    'node ./bin/hag generate',
     `-i ${testOptions.instructionsPath}`,
     `-t ${testOptions.templatesPath}`,
     `-o ${testOptions.outputPath}`,
